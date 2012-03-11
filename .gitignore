@@ -5,3 +5,6 @@
 /NerdDinner/NerdDinner.Tests/obj
 /NerdDinner/_package
 /SimpleWebsite/_package
+/SimpleWebsiteMSBuild/_package
+/SimpleWebsiteMSBuild/SimpleWebsite/bin
+/SimpleWebsiteMSBuild/SimpleWebsite/obj
