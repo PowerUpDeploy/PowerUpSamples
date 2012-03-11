@@ -3,3 +3,8 @@ C:\Projects\PowerUp\SimpleWebsite\bin\SimpleWebsite.pdb
 C:\Projects\PowerUp\SimpleWebsite\obj\Release\ResolveAssemblyReference.cache
 C:\Projects\PowerUp\SimpleWebsite\obj\Release\SimpleWebsite.dll
 C:\Projects\PowerUp\SimpleWebsite\obj\Release\SimpleWebsite.pdb
+C:\Projects\PowerUpSamples\SimpleWebsite\SimpleWebsite\bin\SimpleWebsite.dll
+C:\Projects\PowerUpSamples\SimpleWebsite\SimpleWebsite\bin\SimpleWebsite.pdb
+C:\Projects\PowerUpSamples\SimpleWebsite\SimpleWebsite\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\PowerUpSamples\SimpleWebsite\SimpleWebsite\obj\Release\SimpleWebsite.dll
+C:\Projects\PowerUpSamples\SimpleWebsite\SimpleWebsite\obj\Release\SimpleWebsite.pdb

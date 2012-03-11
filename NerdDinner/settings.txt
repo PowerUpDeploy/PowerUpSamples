@@ -1,0 +1,13 @@
+default
+	web.root				c:\sites
+	database.directory		c:\databases\${website.name}
+
+local
+	web.servers				localmachine
+	website.name			NerdDinner
+	http.port				20001
+
+fakelive
+	web.servers				localmachine
+	website.name			NerdDinnerFakeLive
+	http.port				20002
