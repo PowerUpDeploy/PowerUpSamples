@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+	DefaultTargets="build">
+
+	  <PropertyGroup>
+		<SolutionName>SampleSolution</SolutionName>
+		<BuildConfiguration>Release</BuildConfiguration>
+	</PropertyGroup>
+
+	<Import Project="$(MSBuildThisFileDirectory)\_powerup\build\msbuild\common.targets"/>
+
+  <Target Name="package-project">
+    <PropertyGroup>
+      <WebsiteDir>SimpleWebsite</WebsiteDir>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ExcludedWebsiteFiles Include="**\*.cs;**\*.csproj*;**\obj\**;**\*.pbd" />
+      <WebsiteFiles Include="$(WebsiteDir)\**\*.*" Exclude="@(ExcludedWebsiteFiles)" />
+    </ItemGroup>
+
+    <Copy
+            SourceFiles="@(WebsiteFiles)"
+            DestinationFolder="$(PackageFolder)\$(WebsiteDir)\%(RecursiveDir)"
+        />
+  </Target>
+
+</Project>

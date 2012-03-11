@@ -1,0 +1,5 @@
+C:\Projects\PowerUp\SimpleWebsite\bin\SimpleWebsite.dll
+C:\Projects\PowerUp\SimpleWebsite\bin\SimpleWebsite.pdb
+C:\Projects\PowerUp\SimpleWebsite\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\PowerUp\SimpleWebsite\obj\Release\SimpleWebsite.dll
+C:\Projects\PowerUp\SimpleWebsite\obj\Release\SimpleWebsite.pdb

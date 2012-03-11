@@ -1,0 +1,23 @@
+default
+	website.name			SimpleWebsite
+	deployment.root			${root.drive}\sites
+	http.port				80
+	https.port				443
+
+local
+	web.servers				localhost
+	root.drive				c:
+	http.port				9000
+	https.port				9001
+	example.setting			local
+
+staging
+	web.servers				stagingweb
+	root.drive				e:
+	example.setting			staging
+	
+live
+	web.servers				liveweb1|liveweb2 
+	root.drive				g:
+	example.setting			live
+
