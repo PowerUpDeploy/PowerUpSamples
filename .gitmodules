@@ -1,0 +1,3 @@
+[submodule "SimpleWebsite/_powerup"]
+	path = SimpleWebsite/_powerup
+	url = git@github.com:AffinityID/PowerUp.git
