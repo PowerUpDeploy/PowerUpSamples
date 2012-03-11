@@ -4,3 +4,6 @@
 [submodule "NerdDinner/_powerup"]
 	path = NerdDinner/_powerup
 	url = git@github.com:AffinityID/PowerUp.git
+[submodule "SimpleWebsiteMSBuild/_powerup"]
+	path = SimpleWebsiteMSBuild/_powerup
+	url = git@github.com:AffinityID/PowerUp.git
