@@ -7,3 +7,6 @@
 [submodule "SimpleWebsiteMSBuild/_powerup"]
 	path = SimpleWebsiteMSBuild/_powerup
 	url = git@github.com:AffinityID/PowerUp.git
+[submodule "PowershellSettings/_powerup"]
+	path = PowershellSettings/_powerup
+	url = git@github.com:AffinityID/PowerUp.git
