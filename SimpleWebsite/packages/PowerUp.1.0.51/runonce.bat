@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -inputformat none -command ".\Tools\externalinit.ps1 -installPath '' -toolsPath '.\Tools'"

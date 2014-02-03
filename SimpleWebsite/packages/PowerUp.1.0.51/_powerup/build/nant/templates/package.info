@@ -1,0 +1,4 @@
+PackageInformation
+	package.name	@PACKAGENAME@
+	package.build	@BUILDNUMBER@
+	package.date	@BUILDDATE@
