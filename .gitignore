@@ -8,3 +8,11 @@
 /SimpleWebsiteMSBuild/_package
 /SimpleWebsiteMSBuild/SimpleWebsite/bin
 /SimpleWebsiteMSBuild/SimpleWebsite/obj
+/SimpleWebsite/_bootstrapper
+/SimpleWebsite/_powerup
+/SimpleWebsite/SampleSolution.suo
+/SimpleWebsite/SampleSolution.v11.suo
+/SimpleWebsite/SimpleWebsite/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/SimpleWebsite/SimpleWebsite/obj/Release/SimpleWebsite.csprojResolveAssemblyReference.cache
+/SimpleWebsite/SimpleWebsite/obj
+/SimpleWebsite/SimpleWebsite/bin
