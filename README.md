@@ -1,6 +1,3 @@
-PowerUp Samples
-==============
-
 #SimpleWebsite
 
 ## How to run
