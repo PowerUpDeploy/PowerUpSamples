@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>PowerUp.SampleWebsite</id>
+    <version>1.0.0</version>
+    <authors>Paul Suart, Andrew Revell</authors>
+    <owners>PowerUp</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>PowerUp quickstart sample</description>    
+    <copyright>Copyright 2014</copyright>
+	<dependencies>
+      <dependency id="PowerUp" />
+    </dependencies>
+  </metadata>  
+  <files>       	
+	<file src="_tools\**\*.*" target="Tools" />
+	<file src="_templates\**\*.*" target="Files\_templates" />
+	<file src="SimpleWebsite\**\*.*" target="Files\SimpleWebsite" />
+	<file src="bootstrap.bat" target="Files\bootstrap.bat" />
+	<file src="build.bat" target="Files\build.bat" />
+	<file src="deploy.ps1" target="Files\deploy.ps1" />
+	<file src="main.build" target="Files\main.build" />	
+	<file src="servers.txt" target="Files\servers.txt" />	
+  </files>
+</package>

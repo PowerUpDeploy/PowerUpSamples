@@ -1,7 +1,6 @@
 <project default="build-package-common">
 	<include buildfile="_powerup\build\nant\common.build" />
-
-	<property name="solution.name" value="SampleSolution" />
+	<property name="solution.name" value="SampleSolution" unless="${property::exists('solution.name')}" />
   
 	<target name="package-project">
 		<copy todir="${package.dir}\SimpleWebsite" overwrite="true" flatten="false" includeemptydirs="true">
