@@ -1,0 +1,57 @@
+<project default="build-package-common">
+    <property name="solution.name" value="SampleSolution" />
+
+    <include buildfile="_powerup\build\nant\common.build" />
+
+    <property name="solution.dir" value="${project::get-base-directory()}\.."/>
+    <property name="run.tests" value="true" unless="${property::exists('run.tests')}" />
+    <property name="exclude.test.categories" value="Performance, Slow" unless="${property::exists('exclude.test.categories')}" />
+
+    <target name="clean-test-output" if="${run.tests}">
+        <delete dir="${root.dir}\_testoutput" />
+        <delete dir="${root.dir}\_testreportoutput" />
+    </target>
+
+    <target name="run-tests" description="runs all unit tests" depends="clean-test-output" if="${run.tests}">
+        <!-- Make Test output directories -->
+        <mkdir dir="${root.dir}\_testoutput" />
+        <mkdir dir="${root.dir}\_testreportoutput" />
+
+        <!-- Cleanup previous test runs -->
+        <exec workingdir="${solution.dir}" program="packages\NUnit.Runners.2.6.4\tools\nunit-console.exe">
+            <arg value="/nologo" />
+            <arg value="/cleanup" />
+        </exec>
+
+        <property name="nunit.test.assembly" value="${solution.dir}\Tests\bin\${build.configuration}\Tests.dll" />
+        <property name="nunit.test.output" value="Tests" />
+        <call target="run-tests-in-assembly" />
+    </target>
+
+    <target name="run-tests-in-assembly">
+        <echo message="Running tests in ${nunit.test.assembly}" />
+        <exec workingdir="${solution.dir}" program="packages\NUnit.Runners.2.6.4\tools\nunit-console.exe">
+            <arg value="${nunit.test.assembly}" />
+            <arg value="/xml=${root.dir}\_testoutput\${nunit.test.output}.xml" />
+            <arg value="/nologo" />
+            <arg value="/noshadow" />
+            <arg value="/nothread" />
+            <arg value="/domain:Multiple" />
+            <arg value="/framework:net-4.5" />
+            <arg value="/labels" />
+            <arg value="/exclude:${exclude.test.categories}" />
+        </exec>
+    </target>
+
+    <target name="package-project" depends="run-tests">
+        <copy todir="${package.dir}\SimpleWebsite" overwrite="true" flatten="false" includeemptydirs="true">
+            <fileset basedir="${solution.dir}\SimpleWebsite">
+                <include name="**.aspx"/>
+                <include name="**.css"/>
+                <include name="**.js"/>
+                <include name="**.master"/>
+                <include name="bin/**"/>
+            </fileset>
+        </copy>
+    </target>
+</project>
